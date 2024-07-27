@@ -1,32 +1,27 @@
 import logo from './logo.svg';
 import './App.css';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+import Home from './Components/Home';
+import Register from './Components/Register';
+import Login from './Components/Login ';
 
 function App() {
 
   const router=createBrowserRouter([
+   
     {
-      path:"/",
-      element:"hii i am sathis"
-
+      path:"/Home",
+      element:<Home></Home>
     },
     {
-      path:"/about",
-      element:"about us"
+      path:"/Register",
+      element:<Register></Register>
     },
     {
-      path:"/contact",
-      element:"contact us"
-
-    },
-    {
-      path:"/services",
-      element:"services class"
-    },
-    {
-      path:"/product",
-      element:"product services"
+      path:"/Login",
+      element:<Login></Login>
     }
+
 
   ])
   return (
