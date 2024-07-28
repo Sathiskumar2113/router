@@ -1,6 +1,6 @@
 import React from 'react'
 
-export default function Register() {
+const Register = () => {
   return (
     <div>
       <h1>This page regsiter page</h1>
@@ -12,3 +12,5 @@ export default function Register() {
     </div>
   )
 }
+
+export default Register;

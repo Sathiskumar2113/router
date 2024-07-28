@@ -1,6 +1,9 @@
 import React from 'react'
+import { Outlet } from 'react-router-dom';
 
-export default function Home() {
+
+
+const Home = () => {
   return (
     <div>
         <h1>welcome our page </h1>
@@ -9,13 +12,13 @@ export default function Home() {
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta, vitae? Error optio, quidem ipsum corporis excepturi itaque culpa provident perspiciatis consequuntur sunt id, officia consequatur eius veniam accusamus adipisci facere?
         <br>
         </br>
-         <a href='Register'>Register</a>
-
-
-     
+         <a href='/register'>Register</a><br /><a href='/login'>login</a>
+         
       
-
+    <Outlet/>
      
     </div>
   )
 }
+
+export default Home;
